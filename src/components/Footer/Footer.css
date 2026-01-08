@@ -1,0 +1,98 @@
+/* ===== Footer ===== */
+.footer {
+  background: var(--bg-secondary);
+  padding: 3rem 0;
+  border-top: 1px solid var(--bg-tertiary);
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  position: relative;
+}
+
+/* Footer Social */
+.footer-social {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.footer-social a {
+  font-size: 1.25rem;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.footer-social a:hover {
+  color: var(--text-highlight);
+}
+
+/* Footer Text */
+.footer-text {
+  text-align: center;
+}
+
+.footer-built {
+  font-size: 0.95rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.heart-icon {
+  color: var(--secondary-color);
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+.footer-built a {
+  color: var(--text-highlight);
+  font-weight: 500;
+}
+
+.footer-built a:hover {
+  text-decoration: underline;
+}
+
+.footer-copyright {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+}
+
+/* Back to Top */
+.back-to-top {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background: var(--bg-primary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-highlight);
+  font-size: 1.25rem;
+  transition: var(--transition);
+}
+
+.back-to-top:hover {
+  background: rgba(100, 255, 218, 0.1);
+  border-color: var(--text-highlight);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .back-to-top {
+    position: static;
+    transform: none;
+    margin-top: 1rem;
+  }
+}
